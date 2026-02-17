@@ -1,1 +1,0 @@
-import express from 'express'; import cors from 'cors'; import dotenv from 'dotenv'; dotenv.config(); const app=express(); app.use(cors()); app.get('/',(_,res)=>res.json({ok:true})); app.listen(process.env.PORT||5050,()=>console.log('Backend on '+(process.env.PORT||5050)))
