@@ -86,7 +86,9 @@ Suggested stocks and mutual funds
 CredVest AI assistant interface
 <img width="1550" height="724" alt="image" src="https://github.com/user-attachments/assets/053538fb-3c90-4cd6-9122-0bc6d0d36d84" />
 
+
 Technology Stack
+
 Layer	Technologies
 Frontend	React.js, Vite, Bootstrap / React-Bootstrap, Chart.js
 Backend	Node.js, Express.js, REST APIs
@@ -99,20 +101,8 @@ Visualization	Chart.js and interactive chart components
 Use the exact package versions and additional libraries recorded in the project's dependency files.
 Architecture
 CredVest uses a client–server architecture with a separate Python service for prediction tasks.
-                  ┌──────────────────────────┐
-                  │       React + Vite       │
-                  │       Frontend           │
-                  └────────────┬─────────────┘
-                               │ HTTP / REST
-                  ┌────────────▼─────────────┐
-                  │     Node.js + Express    │
-                  │       Backend API        │
-                  └───────┬───────────┬──────┘
-                          │           │
-                   ┌──────▼─────┐  ┌──▼────────────────┐
-                   │  MongoDB   │  │ Python AI Advisor │
-                   │            │  │ / Prediction API  │
-                   └────────────┘  └───────────────────┘
+<img width="447" height="390" alt="image" src="https://github.com/user-attachments/assets/faca53b2-07e9-46da-8e1d-9dbee4c38b35" />
+
 - Frontend: renders dashboards, forms, charts, and user interactions.
 - Backend: exposes REST endpoints and handles application logic.
 - Database: stores user, portfolio, and transaction-related records.
